@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+        <link rel="stylesheet" href="assets/css/template.css"/>
+    </head>
+
+    <body>
+
+        <form method="post" action="dontHave.php" enctype="multipart/form-data">
+            <input type="hidden" name="country" value="BR">
+
+            <fieldset>
+
+                <legend>FALE CONOSCO</legend>
+                <div class="container">
+                    <label>
+                        <input type="text" name="name" placeholder="Nome*" required>
+                    </label><br/>
+
+                    <label>
+                        <input type="text" name="lastname" placeholder="Sobrenome*" required>
+                    </label><br/>
+
+                    <label>
+                        <input type="email" name="email" placeholder="Email*" required>
+                    </label><br/>
+
+                    <label>
+                        <input type="tel" name="phone" placeholder="Telefone*" required>
+                    </label><br/>
+
+                    <label>
+                        <textarea name="coment" placeholder="Descreva o Problema/Critica*" required></textarea>
+                    </label>
+                </div>
+                <div class="end">
+                    <label>
+                        Tipo de Solicitação*<br/>
+                        <select name="choice" required>
+                            <option value="">Escolha o motivo</option>
+                            <option value="Sugestão">Sugestão</option>
+                            <option value="Reclamação">Reclamação</option>
+                            <option value="Suporte">Suporte</option>
+                        </select>
+                    </label>
+                    
+                    <label>
+                        Arquivos:<br/>
+                        <input type="file" name="arquives" accept="image/*" multiple/>  
+                    </label>
+                </div>
+                <input type="submit" value="Enviar">
+
+            </fieldset>
+        </form>
+
+        <footer>
+
+            <div class="footer_logo">
+                <div>
+                    <a href="https://github.com/Cesaz" target="_blank"><img src="assets/images/GitHub-logo.png"></a>
+                </div>
+                <div>
+                    <a href="https://codepen.io/_cesaz" target="_blank"><img src="assets/images/Codepen-logo.png"></a>
+                </div>
+            </div>
+
+            <div class="footer_creator">
+                Created by <a href="https://www.instagram.com/_cesaz/" target="_blank">César Augusto.</a>
+            </div>
+
+        </footer>
+
+    </body>
+</html>

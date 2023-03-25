@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 350px;
+    margin: auto;
+    position: relative;
+    background-color: #010D26
+}
+
+fieldset {
+    background-color: #F9F9F9;
+    border: 1px solid #CCC;
+    margin: 50px 0;  
+}
+
+.container {
+    padding-right: 9px;
+}
+
+legend {
+    font-size: 15px;
+    background-color: #F9F9F9;
+    border: 2px solid #010D26;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    background-color: #F9F9F9;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+input[type='file'] {
+    border: none;
+    width: 123px;
+    color: transparent;
+    padding: 0;
+}
+
+input[type=file]:hover {
+    border: none;
+}
+
+input::file-selector-button {
+    border: 1px solid #CCC;
+    background-color: #F9F9F9;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+input::file-selector-button:hover {
+    background-color: #010D26;
+    color: #F9F9F9;
+    cursor: pointer;
+    border: none;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+    width: 100%;
+    padding-left: 5px;
+    background-color: #F9F9F9;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: 0;
+    border: 1px solid #010D26ed;
+}
+
+select {
+    height: 30px;
+    background-color: #F9F9F9;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+select:hover, input:hover, textarea:hover {
+    border: 1px solid #010D26;
+}
+
+.end {
+    display: flex;
+    max-width: cover;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+}
+
+input[type=submit]:hover {
+    background-color: #010D26;
+    color: #F9F9F9;
+    cursor: pointer;
+}
+
+.footer_logo {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer img {
+    margin: 5px;
+    background-color: #F9F9F9;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+footer img:hover {
+    width: 35px;
+}
+
+.footer_creator {
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+    color: #F9F9F9;
+    margin-top: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #F9F9F9;
+}
+
+a:hover {
+    text-decoration: #F9F9F9 wavy underline;
+}
